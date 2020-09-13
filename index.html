@@ -10,8 +10,34 @@
       UnityLoader.instantiate("unityContainer", "Build/FlyingKingWeb.json");
     </script>
     <style>
-      body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: white;} 
+      
+      html{
+        font-size: 62.5%; /* 1 rem */
+        box-sizing: border-box;
+      }
 
+body{
+  font: 1.6rem Helvetica;
+  height: 100vh;
+  margin: 0;
+  background-color:black;
+}
+
+      #root{
+  height: 100%;
+}
+
+      .grid-container{
+  display: grid;
+  grid-template-areas: 
+  "topnav"
+  "main"
+  "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+      
       .topnav {
         height: 30px;
         line-height: 30px;
@@ -42,56 +68,30 @@
         color: black;
       }
       
-      .center {
-        padding: 0px;
-        position: absolute;
-        margin: auto;
-        height: 90%;
-        width: 35%;
-        left: 50%;
-        transform: translate(-50%, 0%);
-      }
-  
-      .flex-parent {
-        padding-top: 20px;
-        display: flex;
-      }
-  
-      .flex-child {
-        flex: 1;
-      }
-  
-      .image_edit {
-        margin: auto;
-        height: 200px;
-        width: 300px;
-        text-align: center;
-      }
-      
-      .img-container {
-        text-align: center;
-        display: block;
-      }
-      
-      .mobile-container {
-        width: 100%;
-        padding-top: 20px;
-        height: auto;
-        text-align: center;
-        display: block;
-      }
+      .main{
+  grid-area: main;
+}
+  .footer{
+  grid-area: footer;
+  background-color: #900000;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
       
     </style>
   </head>
-  <body style="background-color:black;">
+  <body>
     <div class="topnav">
       <a class="active" href="index.html">Home</a>
       <a href="privacy_policy.html">Projects</a>
       <a href="contact.html">Contact</a>
     </div>  
-    <div class='flex-parent'>
+    <div class='main'>
         <style> p { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding:0; color: white; text-align: center;} </style>
         Kaan Cinar
-      </div>
+    </div>
+    <div class='footer'>
   </body>
 </html>
