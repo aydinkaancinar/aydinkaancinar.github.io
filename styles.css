@@ -1,0 +1,97 @@
+html{
+    font-size: 62.5%; /* 1 rem */
+    box-sizing: border-box;
+  }
+
+body{
+font: 1.6rem Helvetica;
+height: 100vh;
+margin: 0;
+background-color:black;
+}
+
+  #root{
+height: 100%;
+}
+
+  .grid-container{
+display: grid;
+grid-template-areas: 
+"topnav"
+"main"
+"footer";
+grid-template-columns: 1fr;
+grid-template-rows: 5rem 1fr 5rem;
+height: 100vh;
+}
+  
+  .topnav {
+    grid-area: topnav;
+    height: 40px;
+    line-height: 40px;
+    border: 3px dashed white;
+    overflow: hidden;
+    text-align: center;
+    background-color: black;
+  }
+  
+  .topnav a {
+    height: 30px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #f80000;
+    color: white;
+  }
+  
+  .topnav a.active {
+    background-color: orange;
+    color: black
+  }
+  
+.main{
+grid-area: main;
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-top: 0rem;
+
+}
+
+.my-info{
+font-size: 2rem;
+padding: 1rem;
+}
+
+.name{
+font-size: 10rem;
+padding-bottom: 3rem;
+}
+
+a{
+text-decoration: none;
+color: orange;
+}
+
+a:hover{
+color: #f80000;
+}
+
+.footer{
+height: 40px;
+line-height: 40px;
+border: 3px dashed white;
+overflow: hidden;
+text-align: center;
+background-color: black;
+color: white;
+}
