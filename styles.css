@@ -70,11 +70,13 @@ padding-top: 0rem;
 .my-info{
 font-size: 2rem;
 padding: 1rem;
+text-align: center;
 }
 
 .name{
 font-size: 10rem;
 padding-bottom: 3rem;
+    text-align: center;
 }
 
 a{
