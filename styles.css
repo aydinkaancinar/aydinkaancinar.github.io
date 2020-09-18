@@ -102,14 +102,20 @@ color: rgb(216, 97, 0);
 }
 
 .projects{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .project{
+  width: 200px;
+  height: 200px;
   overflow: hidden;
   text-align: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .project-image{
