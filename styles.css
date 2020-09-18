@@ -123,3 +123,19 @@ color: rgb(216, 97, 0);
 .project-image:hover{
   transform: scale(1.4);
 }
+
+.mobileShow {display: none;}
+      /* Smartphone Portrait and Landscape */
+      @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 480px){ 
+          .mobileShow {display: inline;}
+      }
+      
+      .mobileHide { display: inline; }
+      /* Smartphone Portrait and Landscape */
+      @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 480px){
+          .mobileHide { display: none;}
+      }
