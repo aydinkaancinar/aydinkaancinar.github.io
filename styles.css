@@ -97,7 +97,8 @@ a:hover {
 }
 
 .projects {
-  width: 80vw;
+  text-align: center;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
