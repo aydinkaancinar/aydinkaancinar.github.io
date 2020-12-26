@@ -1,107 +1,99 @@
-html{
-    font-size: 62.5%; /* 1 rem */
-    box-sizing: border-box;
-  }
-
-body{
-font: 1.6rem Helvetica;
-height: 100vh;
-margin: 0;
-background-color:rgb(29, 29, 29);
+html {
+  font-size: 62.5%; /* 1 rem */
+  box-sizing: border-box;
 }
 
-  #root{
-height: 100%;
+body {
+  font: 1.6rem Helvetica;
+  height: 100vh;
+  margin: 0;
+  background-color: #ffffff;
 }
 
-  .grid-container{
-display: grid;
-grid-template-areas: 
-"topnav"
-"main"
-"footer";
-grid-template-columns: 1fr;
-grid-template-rows: 5rem 1fr 5rem;
-height: 100vh;
-}
-  
-  .topnav {
-    grid-area: topnav;
-    height: 40px;
-    line-height: 40px;
-    border: 3px dashed rgb(216, 97, 0);
-    overflow: hidden;
-    text-align: center;
-    background-color: rgb(0, 0, 0);
-  }
-  
-  .topnav a {
-    height: 30px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    color: rgb(216, 97, 0);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-
-  .topnav a:hover {
-    background-color: rgba(216, 97, 0, 0.568);
-    color: white;
-  }
-  
-  .topnav a.active {
-    background-color: rgb(216, 97, 0);
-    color: black
-  }
-  
-.main{
-grid-area: main;
-color: white;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding-top: 0rem;
-
+#root {
+  height: 100%;
 }
 
-.my-info{
-font-size: 2rem;
-text-align: center;
-padding-bottom: 3rem;
-padding-right: 2rem;
-padding-left: 2rem;
+.grid-container {
 }
 
-.name{
-color: rgb(216, 97, 0);
-font-size: 10rem;
-padding: 3rem;
-text-align: center;
+.topnav {
+  height: 40px;
+  line-height: 40px;
+  box-shadow: 0px 5px 5px grey;
+  overflow: hidden;
+  text-align: center;
+  background-color: rgb(37, 121, 160);
 }
 
-a{
-text-decoration: none;
-color: rgb(216, 97, 0);
+.topnav a {
+  height: 30px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-a:hover{
-color: #f80000;
+.topnav a:hover {
+  background-color: rgba(216, 97, 0, 0.568);
+  color: white;
 }
 
-.footer{
-height: 40px;
-line-height: 40px;
-border: 3px dashed rgb(216, 97, 0);
-overflow: hidden;
-text-align: center;
-background-color: rgb(0, 0, 0);
-color: rgb(216, 97, 0);
+.topnav a.active {
+  background-color: rgb(216, 97, 0);
+  color: black;
 }
 
-.projects{
+.main {
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0rem;
+}
+
+.my-info {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 3rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.name {
+  color: rgb(216, 97, 0);
+  font-size: 10rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(216, 97, 0);
+}
+
+a:hover {
+  color: #f80000;
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  height: 40px;
+  line-height: 40px;
+  box-shadow: 0px -5px 5px grey;
+  overflow: hidden;
+  text-align: center;
+  background-color: rgb(37, 121, 160);
+  color: rgb(255, 255, 255);
+}
+
+.projects {
   width: 80vw;
   display: flex;
   justify-content: center;
@@ -109,7 +101,7 @@ color: rgb(216, 97, 0);
   flex-wrap: wrap;
 }
 
-.project{
+.project {
   width: 200px;
   height: 200px;
   overflow: hidden;
@@ -118,30 +110,47 @@ color: rgb(216, 97, 0);
   padding-right: 5rem;
 }
 
-.project-image{
+.project-image {
   width: 100px;
   height: 100px;
-  transition: transform .2s;
+  transition: transform 0.2s;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.project-image:hover{
+.link-image {
+  filter: invert(100%);
+  width: 100px;
+  height: 100px;
+  transition: transform 0.2s;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.project-image:hover {
   transform: scale(1.4);
 }
 
-.mobileShow {display: none;}
-      /* Smartphone Portrait and Landscape */
-      @media only screen
-        and (min-device-width : 320px)
-        and (max-device-width : 480px){ 
-          .mobileShow {display: inline;}
-      }
-      
-      .mobileHide { display: inline; }
-      /* Smartphone Portrait and Landscape */
-      @media only screen
-        and (min-device-width : 320px)
-        and (max-device-width : 480px){
-          .mobileHide { display: none;}
-      }
+.link-image:hover {
+  transform: scale(1.4);
+}
+
+.mobileShow {
+  display: none;
+}
+/* Smartphone Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .mobileShow {
+    display: inline;
+  }
+}
+
+.mobileHide {
+  display: inline;
+}
+/* Smartphone Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .mobileHide {
+    display: none;
+  }
+}
