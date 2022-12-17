@@ -1,73 +1,230 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta
-      name="viewport"
-      content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <link rel="stylesheet" href="styles.css" />
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/remixicons/fonts/remixicon.css">
+    <link rel="stylesheet" href="./assets/css/aos.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
     <title>Kaan Cinar</title>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./images/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./images/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./images/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="./images/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-  </head>
-  <body>
-    <div class="grid-container">
-      <div class="topnav">
-        <a class="active" href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Links</a>
-      </div>
-      <div class="main">
-        <div style="margin-top: 10%; margin-bottom: 10%">
-          <div class="name" style="padding-bottom: 5rem">Kaan Cinar</div>
-          <div class="my-info">
-            Teaching Assistant and Computer Science student at the University of
-            Toronto.
+</head>
+
+<body>
+
+
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Kaan Cinar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-lg-4">
+              <li class="nav-item" >
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#services">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <div class="social-links ms-auto">
+                <a target="_blank" href="https://www.linkedin.com/in/aydin-kaan-cinar/"><i class="ri-linkedin-fill"></i></a>
+                <a target="_blank" href="https://github.com/aydinkaancinar"><i class="ri-github-fill"></i></a>
+                <a target="_blank" href="https://play.google.com/store/apps/developer?id=Aydin+Kaan+Cinar&hl=en_US"><i class="ri-google-play-fill"></i></a>
+            </div>
           </div>
-          <div class="my-info">
-            Interested in Machine Learning, Artificial Intelligence, Game
-            Development and Software Engineering.
-          </div>
-          <div class="my-info">
-            Self-motivated, curious, problem-solving, and collaborative
-            programmer with excellent communication skills.
-          </div>
-          <p class="my-info">
-            <a
-              href="./images/AYDINKAAN-CINAR3.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              >My Resume</a
-            >
-          </p>
         </div>
-      </div>
-      <div class="footer">Kaan Cinar</div>
-    </div>
-  </body>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="display-1" data-aos="fade-up">Kaan Cinar</h1>
+                    <p data-aos="fade-up" data-aos-delay="300">Hi! My name is Aydin Kaan Cinar, a Software Engineer based in Toronto. Fourth year Computer Science student specializing in Machine Learning at University of Toronto.</p> 
+                    <p data-aos="fade-up" data-aos-delay="300">I am interested in Platform Engineering, Machine Learning, and App Development.</p> 
+                    <a href="#services" class="btn btn-outline-light" data-aos="fade-up" data-aos-delay="500">Explore My Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="intro text-center">
+                        <div class="hr-line"></div>
+                        <h1 class="display-4">My Projects</h1>
+                        <p class="mx-auto">During my free time or through some course work, I explored various projects, here are some of them.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-6"  data-aos="fade-up">
+                    <div class="service">
+                        <div class="icon">
+                            <a target="_blank" href="https://kaancinar.me/FlyingKing/"><img class="app-icon" src="./assets/img/fly_k.png" alt="" ></a>
+                        </div>
+                        <div>
+                            <h4>Flying King (Web/Mobile Game, C#, Unity)</h4>
+                            <p>This is a mobile game project I developed on Unity, and designed the art. Published on Google Play. Click the link below to check the web page!</p>
+                            <a target="_blank" href="https://kaancinar.me/FlyingKing/" class="link-arrow">Link <i class="ri-arrow-right-up-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6"  data-aos="fade-up" data-aos-delay="300">
+                    <div class="service">
+                        <div class="icon">
+                            <a target="_blank" href="https://kaancinar.me/kaan.js/examples.html"><img class="app-icon" src="./assets/img/kaanjs.png" alt="" ></a>
+                        </div>
+                        <div>
+                            <h4>Kaan.js (a JavaScript Library)</h4>
+                            <p>This is a graphical 2D physics animations library I designed for JavaScript. </p>
+                            <a target="_blank" href="https://kaancinar.me/kaan.js/examples.html" class="link-arrow">Link <i class="ri-arrow-right-up-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6"  data-aos="fade-up" data-aos-delay="500">
+                    <div class="service">
+                        <div class="icon">
+                            <a target="_blank" href="https://github.com/aydinkaancinar/pacman-game-java"><img class="app-icon" src="./assets/img/pacman.png" alt="" ></a>
+                        </div>
+                        <div>
+                            <h4>PacMan Java</h4>
+                            <p>It is a PacMan game made using Java. Click the icon for the code. Click below to download. </p>
+                            <a href="https://github.com/aydinkaancinar/pacman-game-java/raw/master/pacman/out/artifacts/pacman_jar/pacman.jar" class="link-arrow">Download Jar <i class="ri-arrow-right-up-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6"  data-aos="fade-up" data-aos-delay="700">
+                    <div class="service">
+                        <div class="icon">
+                            <a target="_blank" href="https://github.com/aydinkaancinar/gymmap"><img class="app-icon" src="./assets/img/weight_lifting.png" alt="" ></a>
+                        </div>
+                        <div>
+                            <h4>GymMap, a React App</h4>
+                            <p>It is an app made using MERN stack. Click the link to see the code in my GitHub page.</p>
+                            <a href="https://github.com/aydinkaancinar/gymmap" class="link-arrow">Code <i class="ri-arrow-right-up-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <div class="row" data-aos="fade-up">
+                <div class="col-lg-5">
+                    <div class="intro mb-4">
+                        <div class="hr-line"></div>
+                        <h1 class="display-4">Little bit about me</h1>
+                    </div>
+                    <p>Originally from <strong>Istanbul, Turkey</strong>. Currently in process of completing my final year at <strong>University of Toronto</strong>. During my time at University of Toronto, in addition to standard Computer Science courses such as <strong>Operating Systems</strong> and <strong>Algorithms & Data Structures</strong>, I have taken courses in <strong>Computer Networks</strong>,<strong>Web Development</strong>, <strong>Databases</strong>, <strong>Neural Networks</strong>, <strong>Deep Learning</strong>, and <strong>Computer Graphics</strong>. I am also minoring in <strong>Statistics</strong>. </p>
+                    <p>Between my third and fourth year at university, I worked as a <strong>Platform (DevOps) Engineer</strong> (16 Months) at Oracle, Eloqua. I gained experience developing CI/CD Pipelines using tools such as <strong>GitlabCI</strong>, <strong>Teamcity</strong>, <strong>OCI DevOps</strong>. Built and managed containers in <strong>Docker</strong> and <strong>Kubernetes</strong>. Used <strong>Terraform</strong> to create and change infrastructure in Cloud.</p>
+                    <p>In my free time I like to draw, go to gym, practice playing guitar and read.</p>
+                    <a href="#contact" class="btn btn-outline-dark">Contact Me</a>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <img class="mobileHide" src="./assets/img/about_me.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="intro text-center">
+                        <div class="hr-line"></div>
+                        <h1 class="display-4">LET'S GET IN<br>
+                            TOUCH TODAY</h1>
+                        <p class="mx-auto">Ask me anything!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto" data-aos="fade-up">
+                    <form class="row gy-3" action="https://formsubmit.co/kaan.cinar@mail.utoronto.ca" method="POST" />
+                        <div class="col-lg-6">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col-lg-12">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="col-lg-12">
+                            <textarea class="form-control" placeholder="message" rows="5"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-dark">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="pb-0">
+        <footer>
+            <div class="container footer-top">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <div>
+                            <p class="mb-0">EMAIL</p>
+                            <h2>kaan.cinar@mail.utoronto.ca</h2>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <h5 class="mb-3">Follow me on</h5>
+                        <div class="social-links ms-auto">
+                            <a target="_blank" href="https://www.linkedin.com/in/aydin-kaan-cinar/"><i class="ri-linkedin-fill"></i></a>
+                            <a target="_blank" href="https://github.com/aydinkaancinar"><i class="ri-github-fill"></i></a>
+                            <a target="_blank" href="https://play.google.com/store/apps/developer?id=Aydin+Kaan+Cinar&hl=en_US"><i class="ri-google-play-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container footer-bottom">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">Copyright © All Rights Reserved Aydin Kaan Cinar</p>
+                    </div>
+                    <div class="col-auto">
+                        <p class="mb-0"> <a href="">Kaan Cinar</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/aos.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
 </html>
