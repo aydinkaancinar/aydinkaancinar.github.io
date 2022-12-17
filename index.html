@@ -167,12 +167,20 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto" data-aos="fade-up">
                     <form class="row gy-3" action="https://formsubmit.co/kaan.cinar@mail.utoronto.ca" method="POST">
-                            <input type="text" class="form-control" placeholder="Name">
+                            <input type="text" class="form-control" placeholder="Name" required>
                             <input type="email" class="form-control" placeholder="Email" required>
-                            <input type="text" class="form-control" placeholder="Subject">
+                            <input type="text" class="form-control" placeholder="Subject" required>
                             <textarea class="form-control" placeholder="message" rows="5" required></textarea>
                             <button type="submit" name="submit" class="btn btn-dark">Send Message</button>
                     </form>
+                    <script>
+                    const form = document.forms[0];
+const required = form.querySelectorAll('[required]');
+const invalid = Array.from(required).filter(node => {
+  return !node.checkValidity();
+})
+console.log(invalid)
+</script>
                 </div>
             </div>
         </div>
