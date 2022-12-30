@@ -332,3 +332,7 @@ footer .social-links a {
       display: none;
     }
   }
+
+  .nav-item li a {
+    color: black;
+  }
